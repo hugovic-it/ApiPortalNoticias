@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hugo\\Desktop\\OGit\\ApiPortalNoticias\\ApiPortalNoticias\\ApiPortalNoticias.csproj": {}
+    "C:\\Users\\Hugo\\Desktop\\ApiPortalNoticias\\ApiPortalNoticias\\ApiPortalNoticias.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hugo\\Desktop\\OGit\\ApiPortalNoticias\\ApiPortalNoticias\\ApiPortalNoticias.csproj": {
+    "C:\\Users\\Hugo\\Desktop\\ApiPortalNoticias\\ApiPortalNoticias\\ApiPortalNoticias.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hugo\\Desktop\\OGit\\ApiPortalNoticias\\ApiPortalNoticias\\ApiPortalNoticias.csproj",
+        "projectUniqueName": "C:\\Users\\Hugo\\Desktop\\ApiPortalNoticias\\ApiPortalNoticias\\ApiPortalNoticias.csproj",
         "projectName": "ApiPortalNoticias",
-        "projectPath": "C:\\Users\\Hugo\\Desktop\\OGit\\ApiPortalNoticias\\ApiPortalNoticias\\ApiPortalNoticias.csproj",
+        "projectPath": "C:\\Users\\Hugo\\Desktop\\ApiPortalNoticias\\ApiPortalNoticias\\ApiPortalNoticias.csproj",
         "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hugo\\Desktop\\OGit\\ApiPortalNoticias\\ApiPortalNoticias\\obj\\",
+        "outputPath": "C:\\Users\\Hugo\\Desktop\\ApiPortalNoticias\\ApiPortalNoticias\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",

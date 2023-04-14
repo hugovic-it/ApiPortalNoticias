@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cu8TvfOZQhcSbhNSL/yrP6w8W6xXqXR9HtBSjRcr+mRgVdqOjxhABmfaced5jzrZmZ4deF26hKtfPKuqoXxKAQ==",
+  "dgSpecHash": "CIQ/kKod4GtZ82YiGYx9jk+P+0rD3MtOSmJL3KbR3h1Yivmy20dxrdBy41ADM8FQg9k4Ay8s67JZoHLhXuzkGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hugo\\Desktop\\OGit\\ApiPortalNoticias\\ApiPortalNoticias\\ApiPortalNoticias.csproj",
+  "projectFilePath": "C:\\Users\\Hugo\\Desktop\\ApiPortalNoticias\\ApiPortalNoticias\\ApiPortalNoticias.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hugo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.5\\microsoft.data.sqlite.core.7.0.5.nupkg.sha512",

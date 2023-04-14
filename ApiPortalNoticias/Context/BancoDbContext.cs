@@ -9,7 +9,6 @@ public class BancoDbContext : DbContext
     public DbSet<Autor> Autores { get; set; }
 
 
-    //Inserir no appsettings.json
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
         optionsBuilder.UseSqlite(connectionString: "DataSource=app.db;Cache=Shared");
     }

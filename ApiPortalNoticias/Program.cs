@@ -1,3 +1,5 @@
+using ApiPortalNoticias.Context;
+
 namespace ApiPortalNoticias
 {
     public class Program
@@ -7,8 +9,9 @@ namespace ApiPortalNoticias
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
+            builder.Services.AddDbContext<BancoDbContext>();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
