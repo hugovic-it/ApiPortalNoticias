@@ -1,4 +1,7 @@
 using ApiPortalNoticias.Context;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace ApiPortalNoticias
 {
@@ -7,10 +10,11 @@ namespace ApiPortalNoticias
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
             // Add services to the container.
             builder.Services.AddControllers();
-            builder.Services.AddDbContext<BancoDbContext>();
+            builder.Services.AddDbContext<BancoDbContext>(options => {  //valido? seguro?
+                    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
