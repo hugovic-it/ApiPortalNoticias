@@ -1,8 +1,11 @@
 using ApiPortalNoticias.Context;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace ApiPortalNoticias
 {
@@ -20,6 +23,26 @@ namespace ApiPortalNoticias
             builder.Services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<BancoDbContext>()
                 .AddDefaultTokenProviders();
+
+            //JWT
+            //Adicionar o manipulador de autenticação e define o 
+            //esquema de autenticacao usado: Bearer
+            //valida o emissor, a audiencia e a chave
+            //usando a chave secreta calida e a assinatura
+            builder.Services.AddAuthentication(
+                JwtBearerDefaults.AuthenticationScheme).
+                AddJwtBearer(options =>
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidAudience = builder.Configuration["TokenConfiguration:Audience"],
+                    ValidIssuer = builder.Configuration["TokenConfiguration:Issuer"],
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"]))
+                });
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
