@@ -1,6 +1,7 @@
 ﻿using ApiPortalNoticias.Context;
 using ApiPortalNoticias.Models;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ namespace ApiPortalNoticias.Controllers;
 [Authorize(AuthenticationSchemes = "Bearer")]
 [Route("api/[controller]")]
 [ApiController]
+//[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 public class AutoresController : ControllerBase
 {
     private readonly BancoDbContext _contexto;
