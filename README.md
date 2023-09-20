@@ -47,7 +47,7 @@ Essa API fornece acesso a um banco de dados de notícias que permite que os auto
 - .NET 6 Web API
 - SQLite
 - EntityFramework Core
-- Padrões Repository e Unit of Work
+- Identity
 
 <br>
 
