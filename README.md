@@ -1,6 +1,6 @@
 # **ApiPortalNoticias**
 
-Essa API fornece acesso a um banco de dados de notícias que permite que os autores das notícias publiquem, editem, visualizem e excluam suas próprias notícias.
+Essa API fornece acesso a um banco de dados de notícias que permite que os autores publiquem, editem, visualizem e excluam suas próprias notícias.
 
 <br>
 
